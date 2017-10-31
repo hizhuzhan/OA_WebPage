@@ -5,8 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>请假申请单(员工)</title>
     <!--<link rel="stylesheet" href="index.css">-->
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script>
         var width = document.documentElement.clientWidth || document.body.clientWidth;
         document.getElementsByTagName("html")[0].style.fontSize = width / 750 * 100 + "px";
@@ -85,6 +86,9 @@
             font-size: 0.3rem;
             width: 60%;
         }
+/*        .content ul li .hide{
+            display: none;
+        }*/
     </style>
 </head>
 <body>
@@ -100,7 +104,7 @@
             <li>
                 <div class="line">
                     <span class="text">申请日期</span>
-                    <input type="text" name="fldsqrq" id="fldsqrq"/>
+                    <input type="date" name="fldsqrq" id="fldsqrq"/>
                 </div>
             </li>
             <li>
@@ -124,23 +128,22 @@
             <li>
                 <div class="line">
                     <span class="text">请假类型</span>
-                    <select>
-                        <option value="volvo">带薪假(调休)</option>
-                        <option value="saab">事假</option>
-                        <option value="audi">病假 </option>
-                        <option value="audi">年休假</option>
-                        <option value="opel">丧假</option>
-                        <option value="audi">婚假</option>
-                        <option value="audi">产假</option>
-                        <option value="audi">陪护假</option>
-                        
+                    <select id="fldqjlx">
+                        <option value="flddxj">带薪假(调休)</option>
+                        <option value="fldsj">事假</option>
+                        <option value="fldbj">病假 </option>
+                        <option value="fldfldnxj">年休假</option>
+                        <option value="fldsj">丧假</option>
+                        <option value="fldhj">婚假</option>
+                        <option value="fldcj">产假</option>
+                        <option value="fldphj">陪护假</option>
                     </select>
                 </div>
             </li>
             <li>
                 <div class="line">
                     <span class="text">年休假剩余</span>
-                    <input type="number" name="fldgzdbr" id="fldgzdbr"/>
+                    <input type="number" name="fldgzdbr" id="fldgzdbr" readonly="readonly"/>
                 </div>
             </li>
             <li>
@@ -152,5 +155,10 @@
         </ul>
     </div>
 </div>
+<script type="text/javascript">
+    $(function(){
+
+    });
+</script>
 </body>
 </html>
