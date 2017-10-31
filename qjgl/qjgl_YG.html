@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="index.css">-->
+    <script>
+        var width = document.documentElement.clientWidth || document.body.clientWidth;
+        document.getElementsByTagName("html")[0].style.fontSize = width / 750 * 100 + "px";
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            height: 100%;
+            background: #fff;
+
+            /*-webkit-filter: blur(15px);*/
+            /*-moz-filter: blur(15px);*/
+            /*-o-filter: blur(15px);*/
+            /*-ms-filter: blur(15px);*/
+            /*filter: blur(15px);*/
+        }
+
+        .content {
+            height: 100%;
+            position: relative;
+            background: #fff;
+            padding-bottom: 0.40rem;
+            /*padding-left: 0.33rem;*/
+            /*padding-right: 0.33rem;*/
+        }
+
+        .content ul {
+            margin: 0;
+            padding: 0 0 0.35rem 0;
+
+        }
+
+        .content ul li {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0.1rem;
+            border-bottom: 1px solid #dcddde;
+            height: 1rem;
+        }
+
+        .content ul li div {
+            /*height: 50%;*/
+            display: flex;
+            padding: 0 0.50rem;
+
+        }
+
+        .content ul li .line {
+            justify-content: space-between;
+            line-height: 0.6rem;
+        }
+        .content ul li .line .text{
+            font-size: 0.35rem;
+            color: #18b2ed;
+        }
+        .content ul li .line input{
+            height: 0.6rem;
+            font-size: 0.3rem;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="content">
+        <ul>
+            <li>
+                <div class="line">
+                    <span class="text">申请人</span>
+                    <input type="text" name="fldsqr" id="fldsqr"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">申请日期</span>
+                    <input type="text" name="fldsqrq" id="fldsqrq"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">请假时间(始)</span>
+                    <input type="date" name="fldqjsj_start" id="fldqjsj_start"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">请假时间(终)</span>
+                    <input type="date" name="fldqjsj_end" id="fldqjsj_end"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">共计请假天数</span>
+                    <input type="number" name="fldgjqjts" id="fldgjqjts" readonly="readonly"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">工作代办人</span>
+                    <input type="number" name="fldgzdbr" id="fldgzdbr"/>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
