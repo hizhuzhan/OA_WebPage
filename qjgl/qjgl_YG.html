@@ -80,6 +80,11 @@
             font-size: 0.3rem;
             width: 60%;
         }
+        .content ul li .line select{
+            height: 0.6rem;
+            font-size: 0.3rem;
+            width: 60%;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +94,7 @@
             <li>
                 <div class="line">
                     <span class="text">申请人</span>
-                    <input type="text" name="fldsqr" id="fldsqr"/>
+                    <input type="text" name="fldsqr" id="fldsqr" placeholder="申请人"/>
                 </div>
             </li>
             <li>
@@ -118,8 +123,30 @@
             </li>
             <li>
                 <div class="line">
-                    <span class="text">工作代办人</span>
+                    <span class="text">请假类型</span>
+                    <select>
+                        <option value="volvo">带薪假(调休)</option>
+                        <option value="saab">事假</option>
+                        <option value="audi">病假 </option>
+                        <option value="audi">年休假</option>
+                        <option value="opel">丧假</option>
+                        <option value="audi">婚假</option>
+                        <option value="audi">产假</option>
+                        <option value="audi">陪护假</option>
+                        
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">年休假剩余</span>
                     <input type="number" name="fldgzdbr" id="fldgzdbr"/>
+                </div>
+            </li>
+            <li>
+                <div class="line">
+                    <span class="text">工作代办人</span>
+                    <input type="text" name="fldgzdbr" id="fldgzdbr"/>
                 </div>
             </li>
         </ul>
